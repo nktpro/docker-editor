@@ -1,11 +1,11 @@
 # docker-swagger-editor
-Dockerized swagger-editor, syncs edited document to disk
+Dockerized swagger-editor, syncs edited document to disk. Changes are saved as you type.
 
 # Example
 
 Launch the editor:
 
-    docker run -i --rm -v ${PWD}:/var/app nktpro/swagger-editor /var/app/test.yml
+    docker run -it --rm -v ${PWD}:/var/app -p 8080:8080 nktpro/swagger-editor /var/app/test.yml
     
 Then browse to
 
