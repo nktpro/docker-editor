@@ -1,0 +1,1 @@
+require('swagger-editor-server').edit(process.argv[2]);
