@@ -5,10 +5,10 @@ Dockerized swagger-editor, syncs edited document to disk
 
 Launch the editor:
 
-    docker run -i --rm -v $cwd:/var/app nktpro/swagger-editor /var/app/test.yml
+    docker run -i --rm -v ${PWD}:/var/app nktpro/swagger-editor /var/app/test.yml
     
 Then browse to
 
-    http://[DOCKER_HOST_IP]:3001
+    http://[DOCKER_HOST_IP]:8080
     
 
