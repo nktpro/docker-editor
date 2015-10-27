@@ -3,4 +3,12 @@ Dockerized swagger-editor, syncs edited document to disk
 
 # Example
 
-    docker run -i --rm -v $cwd:/var/app -w /var/app nktpro/swagger-editor test.yml
+Launch the editor:
+
+    docker run -i --rm -v $cwd:/var/app nktpro/swagger-editor /var/app/test.yml
+    
+Then browse to
+
+    http://[DOCKER_HOST_IP]:3001
+    
+
