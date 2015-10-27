@@ -12,4 +12,6 @@ ADD ./edit* /var/deps/
 
 RUN chmod a+x /var/deps/edit.sh
 
+EXPOSE 3001
+
 ENTRYPOINT ["/var/deps/edit.sh"]
